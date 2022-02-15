@@ -1,7 +1,7 @@
 const spinner = (rotations) => {
   const spinSyms = ['\r|   ', '\r/   ', '\r-   ', '\r\\   '];
   delay = 100;
-  for (let i = 0; i < (rotations * 2); i++) {
+  for (let i = 0; i < rotations * 2; i++) {
     for (const sym of spinSyms) {
       setTimeout(() => {
         process.stdout.write(sym);
@@ -14,4 +14,4 @@ const spinner = (rotations) => {
   }
 }
 
-spinner(2);
+spinner(4);
